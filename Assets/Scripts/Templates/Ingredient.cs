@@ -4,12 +4,12 @@ public class Ingredient : MonoBehaviour
 {
     // Attributes
     public int ingredientId;
-    public string label;
+    public string ingredientName;
     public string status;
-    public string storageLocation;
+    public GameObject storageLocation;
     public bool isPerishable;
-    public GameObject model;
-    public bool perished;
+    public GameObject IngredientModel;
+    public bool isPerished;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

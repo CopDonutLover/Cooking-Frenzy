@@ -5,11 +5,11 @@ public class Recipe : MonoBehaviour
 {
     // Attributes
     public int recipeId;
-    public string label;
+    public string recipeName;
     public List<GameObject> ingredients;
     public List<GameObject> steps;
     public int points;
-    public GameObject model;
+    public GameObject recipeModel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

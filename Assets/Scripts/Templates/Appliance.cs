@@ -4,12 +4,12 @@ public class Appliance : MonoBehaviour
 {
     // Attributes
     public int applianceId;
-    public string type;
+    public string applianceType;
     public Vector3 position;
-    public int capacity;
+    public int itemCapacity;
     public string status;
+    public GameObject ApplianceModel;
     public int itemCount;
-    public GameObject model;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -5,8 +5,8 @@ public class LevelMap : MonoBehaviour
 {
     // Attributes
     public int mapId;
-    public Vector3[][] layout;
-    public List<GameObject> stations;
+    public Vector3[][] mapLayout;
+    public List<GameObject> mapStations;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -5,10 +5,10 @@ public class Player : MonoBehaviour
     // Attributes
     public int playerId;
     public string username;
-    public float speed;
+    public float playerSpeed;
     public GameObject holdingItem;
     public Vector3 position;
-    public GameObject model;
+    public GameObject playerModel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

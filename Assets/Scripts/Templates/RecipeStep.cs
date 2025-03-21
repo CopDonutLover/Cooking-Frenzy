@@ -5,7 +5,7 @@ public class RecipeStep : MonoBehaviour
 {
     // Attributes
     public int stepId;
-    public string label;
+    public string stepName;
     public int prepTime;
     public int cookTime;
     public List<GameObject> ingredients;
