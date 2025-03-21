@@ -1,14 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RecipeStep : MonoBehaviour
+public class LevelMap : MonoBehaviour
 {
     // Attributes
-    public int stepId;
-    public string label;
-    public int prepTime;
-    public int cookTime;
-    public List<GameObject> ingredients;
+    public int mapId;
+    public Vector3[][] layout;
+    public List<GameObject> stations;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
