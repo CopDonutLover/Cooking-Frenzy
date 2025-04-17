@@ -11,6 +11,7 @@ public class Recipe : MonoBehaviour
     public int points;
     public GameObject recipeModel;
     public int penalty;
+    public int timeLimit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

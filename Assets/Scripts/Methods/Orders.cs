@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using Random = System.Random;
 
@@ -8,7 +9,7 @@ public class Orders : MonoBehaviour
     Random random = new Random();
     List<Recipe> recipes = new List<Recipe>();
     MatchStats matchStats = GameObject.FindGameObjectWithTag("Resources").GetComponent<MatchStats>();
-
+    Order orderTemplate = Resources.Load<Order>("Templates/Order");
 
     // Sub-Main Methods
     public Recipe GetRandomRecipe()
@@ -26,7 +27,10 @@ public class Orders : MonoBehaviour
     // Main Methods
     public void CreateNewOrder()
     {
-
+        Order newOrder = Instantiate(orderTemplate).GetComponent<Order>();
+        Recipe randomRecipe = GetRandomRecipe();
+        newOrder.recipe = randomRecipe;
+        AddOrderToList(newOrder);
     }
 
     public void OnOrderComplete(Order order)
