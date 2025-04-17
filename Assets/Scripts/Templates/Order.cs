@@ -4,7 +4,7 @@ public class Order : MonoBehaviour
 {
     // Attributes
     public int orderId;
-    public int recipeId;
+    public Recipe recipe;
     public int timeLimit;
     public string status;
 
