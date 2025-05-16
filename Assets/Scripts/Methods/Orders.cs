@@ -37,7 +37,7 @@ public class Orders : MonoBehaviour
     {
         matchStats.orders.Remove(order);
         matchStats.score += order.recipe.points;
-        // Calculate bonus
+        //TODO: Calculate bonus
     }
 
     public void OnOrderTimeRunout(Order order)
@@ -45,12 +45,4 @@ public class Orders : MonoBehaviour
         matchStats.orders.Remove(order);
         matchStats.penalty += order.recipe.penalty;
     }
-
-    void Update()
-    {
-
-    }
-
-    /** Todo */
-    // Watch for if order is complete
 }
